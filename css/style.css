@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+
+*{
+    font-family: 'KoHo', sans-serif;
+}
+
+#main-container{
+    margin: 20%;
+    width: auto;
+    background-color: pink;
+    border-radius: 25px;
+}
+
+#minutes2{
+    display: none;
+}
+
+
+@media screen and (max-width: 560px) {
+    #inputGroup-sizing-lg{
+        display: none;
+    }
+    #textInput{
+        width: 100%;
+        border-radius: 15px;
+    }
+    #minutes2{
+        display: flex;
+        padding-left: 20%;
+        padding-bottom: 7%;
+        font-weight: bolder;
+        font-size: 19px;
+        text-decoration: underline;
+    }
+}
