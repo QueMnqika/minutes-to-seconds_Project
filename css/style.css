@@ -10,11 +10,18 @@ h3{
     text-shadow: 0 0 5px #000;
 }
 
+body{
+    animation: appear 5s linear;
+    transition: ease-in 4s;
+}
+
 #main-container{
     width: auto;
     background-color: #005DC1;
     border-radius: 25px;
     box-shadow: 0 0 16px #000;
+    animation: spin 2.3s linear;
+    animation-delay: 1.5s;
 }
 
 #inputs input, #inputGroup-sizing-lg{
@@ -55,5 +62,23 @@ button:hover{
         color: #fff;
         text-shadow: 0 0 5px #000;
         width: 100%;
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
     }
 }
