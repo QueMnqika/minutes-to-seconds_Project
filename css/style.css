@@ -5,19 +5,40 @@
     font-family: 'KoHo', sans-serif;
 }
 
+
+h3{
+    text-shadow: 0 0 5px #000;
+}
+
 #main-container{
-    margin: 20%;
     width: auto;
-    background-color: pink;
+    background-color: #005DC1;
     border-radius: 25px;
+    box-shadow: 0 0 16px #000;
+}
+
+#inputs input, #inputGroup-sizing-lg{
+    box-shadow: 0 0 5px #000;
 }
 
 #minutes2{
     display: none;
 }
 
+button{
+    box-shadow: 0 0 4px #000;
+}
+
+button:hover{
+    background-color: #212932a6;
+    box-shadow: 0 0 8px #000;
+}
+
 
 @media screen and (max-width: 560px) {
+    #main-container{
+        width: 100%;
+    }
     #inputGroup-sizing-lg{
         display: none;
     }
@@ -27,10 +48,12 @@
     }
     #minutes2{
         display: flex;
-        padding-left: 20%;
+        padding-left: 2%;
         padding-bottom: 7%;
         font-weight: bolder;
         font-size: 19px;
-        text-decoration: underline;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+        width: 100%;
     }
 }
